@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <title>Документ без названия</title>
 <link rel="stylesheet" href="css/bootstrap.min.css" />
+<script src="js/bootstrap.min.js" type="application/javascript"></script>
+<link rel="stylesheet" href="css/chief-slider.css">
 <link rel="stylesheet" href="css/style.css" />
-<script src="js/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/js.js"></script>
+<script defer src="js/chief-slider.js"></script>
 </head>
 
 <body>
@@ -19,21 +19,26 @@
         <div class="tel"> Тел: +7 (843) 229-13-81 <br>
           Email: info@lab-21.ru </div>
         <div class="butq">Задать вопрос</div>
-        <div class="hnavi">Казань <img src="ico/strl.png" alt="" width="10px;"> Ru <img src="ico/strl.png" alt="" width="10px;"></div>
+        <div class="hnavi"><span class="hhome">Казань <img src="ico/strl.png" alt="" width="10px;"></span> Ru <img src="ico/strl.png" alt="" width="10px;"></div>
       </div>
     </div>
   </div>
 </div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-blue">
   <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"> <a class="nav-link" href="#"><span class="lin">Главная</span><span class="sr-only">(current)</span></a> </li>
-        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a> </div>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item home"> <a class="nav-link" href="#"><span class="lin">Главная</span></a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Каталог </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </li>
         <li class="nav-item"> <a class="nav-link" href="#">Отрасли</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#">О компании</a> </li>
@@ -41,16 +46,13 @@
         <li class="nav-item"> <a class="nav-link" href="#">Наши проекты</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#">Контакты</a> </li>
       </ul>
-      <form class="form-inline">
+      <form class="d-flex">
         <input class="form-control" type="search" placeholder="Поиск по сайту" aria-label="Search">
-        <button class="btn bsearch" type="submit"><img src="ico/search.png" alt=""></button>
+        <button class="btn  bsearch" type="submit"><img src="ico/search.png" alt=""></button>
       </form>
     </div>
   </div>
-  <!--/.nav-collapse --> 
 </nav>
-<!--/.navbar -->
-
 <div class="screen">
   <div class="titscreen">
     <div class="titscreent">
@@ -75,15 +77,153 @@
   </div>
 </div>
 <div class="lab">
+  <div class="container">
+    <div class="labcont">
+      <div class="title">О компании</div>
+      <div>
+        <p>Мы поставляем широкий ассортимент лабораторного оборудования, приборов, реактивов и лабораторной посуды, что позволяет осуществлять полную комплектацию лабораторий предприятий и учреждений современным лабораторным оборудованием, а также расходными материалами и лабораторной мебелью.</p>
+        <p> Основная задача нашей фирмы – это комплексное решение проблем заказчика, наиболее полное удовлетворение разнообразных запросов пользователей аналитических приборов и расходных материалов </p>
+      </div>
+      <a href="#" class="labbbut">Подробнее</a> </div>
+  </div>
   <div class="labfig">
-    <div class="labfigcont">
-      <div class="container">
-        <div class="lbftc">
-          <div class="title">О компании</div>
-        </div>
-        </div>
-    </div>
+    <div class="labfigcont"> </div>
   </div>
 </div>
+<div class="screen3">
+  <div class="container">
+    <div class="title">Отраслевые решения</div>
+    <div class="row">
+      <div class="otrsmenu">
+        <div class = "otrsmenuit">
+          <div class="contimgotr"><img src="ico/image11.png" alt=""></div>
+          <div class="otrsmenuz">Для строительной индустрии</div>
+        </div>
+        <div class = "otrsmenuit">
+          <div class="contimgotr"><img src="ico/image12.png" alt=""></div>
+          <div class="otrsmenuz">Для молочной отрасли</div>
+        </div>
+        <div class = "otrsmenuit">
+          <div class="contimgotr"><img src="ico/image13.png" alt=""></div>
+          <div class="otrsmenuz">Для сельского хозяйства</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="otrsmenu">
+        <div class = "otrsmenuit">
+          <div class="contimgotr"><img src="ico/image14.png" alt=""></div>
+          <div class="otrsmenuz">Оборудование для хроматографии</div>
+        </div>
+        <div class = "otrsmenuit">
+          <div class="contimgotr"><img src="ico/image15.png" alt=""></div>
+          <div class="otrsmenuz">Для анализа нефти и нефтепродуктов</div>
+        </div>
+        <div class = "otrsmenuit">
+          <div class="contimgotr"><img src="ico/image16.png" alt=""></div>
+          <div class="otrsmenuz">Строительная химия</div>
+        </div>
+      </div>
+    </div>
+    <div class="showallcont"> <a href="#" class="showall">Показать все</a> </div>
+  </div>
+</div>
+<div class="screen4">
+  <div class="container">
+    <div class="title">Лидеры продаж</div>
+    <div class="slider">
+      <div class="slider__container">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <div class="sliderb">
+                <div class="sliderbimg"><img src="ico/image5.png" alt=""></div>
+                <div class="sliderbt">Ионный хроматограф "Стайер-портативный"</div>
+                <p>Предназначен для анализа неорганических и органических ионов...</p>
+                <div class="sliderbz">Цена по запросу</div>
+                <div class="clear"></div>
+                <div class="sliderbbutc"><a href="#" class="sliderbbut">Запросить</a></div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="sliderb">
+                <div class="sliderbimg"><img src="ico/image6.png" alt=""></div>
+                <div class="sliderbt">Настольные весы AD-10H</div>
+                <p>Электронные настольные весы CAS AD-10H повышенной точности, НПВ 10кг.</p>
+                <div class="sliderbc">7 590 ₽</div>
+                <div class="clear"></div>
+                <div class="sliderbbutc"><a href="#" class="sliderbbut">Запросить</a></div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="sliderb">
+                <div class="sliderbimg"><img src="ico/image7.png" alt=""></div>
+                <div class="sliderbt">Аквадистиллятор ДЭ-10 ЭМО</div>
+                <p>Предназначен для производства дистиллированной воды, отвечающей требованиям...</p>
+                <div class="sliderbc">19 850 ₽</div>
+                <div class="clear"></div>
+                <div class="sliderbbutc"><a href="#" class="sliderbbut">Запросить</a></div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="sliderb">
+                <div class="sliderbimg"><img src="ico/image5.png" alt=""></div>
+                <div class="sliderbt">Ионный хроматограф "Стайер-портативный"</div>
+                <p>Предназначен для анализа неорганических и органических ионов...</p>
+                <div class="sliderbc">15 850 ₽</div>
+                <div class="clear"></div>
+                <div class="sliderbbutc"><a href="#" class="sliderbbut">Запросить</a></div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="sliderb">
+                <div class="sliderbimg"><img src="ico/image6.png" alt=""></div>
+                <div class="sliderbt">Аквадистиллятор ДЭ-10 ЭМО</div>
+                <p>Предназначен для производства дистиллированной воды, отвечающей требованиям...</p>
+                <div class="sliderbc">19 850 ₽</div>
+                <div class="clear"></div>
+                <div class="sliderbbutc"><a href="#" class="sliderbbut">Запросить</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Кнопки для перехода к предыдущему и следующему слайду --> 
+        <a href="#" class="slider__control" data-slide="prev"></a> <a href="#" class="slider__control" data-slide="next"></a> </div>
+    </div>
+  </div>
+  <div class="showallcont"> <a href="#" class="showall">Перейти в каталог</a> </div>
+</div>
+<div class="screen5">
+  <div class="container">
+    <div class = "row">
+      <div class="col-md-6">
+        <div class="abcenter">
+			<div class="adcenterc">
+          <div class="screen5t">Вам нужна помощь 
+            в подборе оборудования?</div>
+        
+        Позвоните нам или закажите звонок для консультации
+        <div class="telsc5">+7 (843) 229-13-81 </div>
+        <form action="" class="scr5form">
+          <input type="tel" placeholder="Введите ваш телефон" class="scr5in">
+          <input type="button" value="Заказать звонок" class="scr5but">
+        </form>
+			</div></div></div>
+      <div class="col-md-6">
+        <div class="abcenter">
+          <div class="hron"><img src="ico/image27.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+		
+  </div>
+</div>
+	<footer></footer>
+	
+	
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+  new ChiefSlider('.slider');
+});</script>
 </body>
 </html>

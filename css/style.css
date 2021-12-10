@@ -3,7 +3,7 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 14px;
 }
-.bg-light {
+.bg-blue {
   background: #49ADF2;
   height: 44px;
 }
@@ -14,7 +14,7 @@ body {
   width: 80%;
   padding: 10px;
 }
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+.home {
   color: #FFFFFF;
   background: #3395E7;
   transform: skew(335deg);
@@ -59,7 +59,7 @@ body {
 }
 .contith {
   width: 100%;
-  padding: 6px 14px;
+  padding: 12px 14px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,19 +69,20 @@ body {
 }
 .butq {
   font-size: 13px;
-  padding: 3px 40px;
+  padding: 2px 40px;
   color: #ffffff;
   margin: 10px 21px;
   background: #82ac0a;
   border-radius: 10px;
 }
 .hnavi {
-  align-items: flex-end;
+  align-items: flex-end; 
 }
+.hhome { margin-right: 10px;}
 .screen {
   background: url("../ico/screen.png") no-repeat center center fixed;
   width: 100%;
-  height: 450px;
+  height: 400px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -93,7 +94,7 @@ body {
   flex-direction: column;
 }
 .titscreen {
-  padding: 23px 0;
+  padding: 10px 0;
   background: rgba(255, 255, 255, 0.59);
   color: #3A79AE;
   transform: skew(335deg);
@@ -101,10 +102,12 @@ body {
 }
 .titscreent {
   transform: skew(25deg);
-  line-height: 45px;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 700;
+}
+.titscreent p {
+  margin-bottom: 1px;
 }
 .aboutmenu {
   position: relative;
@@ -128,30 +131,214 @@ body {
   padding: 10px 0;
   text-align: center;
   width: 100%;
-  box-shadow: 1px 1px 10px 0 #0000011;
+  box-shadow: 1px 1px 10px 0 #0000012e;
 }
+
 .lab {
   margin: 10px 0 30px;
   background: url("../ico/lab.png") no-repeat;
   width: 100%;
-  height: 400px;
+  height: 350px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
+  z-index: 1;
+  position: relative;
 }
 .labfig {
-  width: 54%;
+  width: 60%;
   height: 400px;
-  transform: skew(335deg);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  transform: skew(339deg);
   background: rgba(255, 255, 255, 0.67);
   margin-left: -8%;
 }
-
-.labfigcont { transform: skew(25deg); margin-left: 8%; }
-.title {color:#1F86DB; font-size:20px; font-weight: 700;}
-.lbftc { padding-top:50px;}
+.labcont {
+  top: 40px;
+  position: absolute;
+  z-index: 3;
+  width: 40%;
+}
+.labbbut {
+  font-size: 16px;
+  padding: 4px 40px;
+  width: 200px;
+  color: #ffffff;
+  margin: 10px 0;
+  background: #49ADF2;
+  border-radius: 15px;
+  text-align: center;
+}
+.labfigcont {
+  transform: skew(25deg);
+  margin-left: 8%;
+}
+.title {
+  color: #1F86DB;
+  font-size: 26px;
+  font-weight: 700;
+  z-index: 2;
+  margin-bottom: 10px;
+}
+.lbftc {
+  padding-top: 50px;
+}
+.otrsmenu {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  padding: 15px 30px;
+  width: 100%;
+}
+.otrsmenuit {
+  margin: 0 2%;
+  float: left;
+  width: 20%;
+  box-shadow: 1px 1px 10px 0 #0000012e;
+  transform: skew(345deg);
+  overflow: hidden;
+  display: block;
+}
+.contimgotr {
+  width: calc(100% + 70px);
+  margin-left: -30px;
+  transform: skew(15deg);
+}
+.otrsmenuit img {
+  width: 100%;
+  max-height: 200px;
+}
+.otrsmenuz {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  transform: skew(15deg);
+	    font-size: 12px;
+}
+.showallcont {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 10px;
+}
+.showall {
+  padding: 1px 40px 2px;
+  color: #ffffff;
+  margin: 10px 21px;
+  background: #82ac0a;
+  border-radius: 10px;
+  min-width: 180px;
+  text-align: center;
+}
+.screen3 {
+  padding-bottom: 50px;
+}
+.screen4 {
+  background: rgba(248, 250, 251, 0.61);
+  padding: 10px 0;
+  padding-bottom: 50px;
+}
+.slider__wrapper {
+  overflow: hidden;
+}
+.slider__item {
+  flex: 0 0 40%;
+  max-width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+}
+.sliderb {
+  display: block;
+  background: #FFFFFF;
+  margin: 5px 15px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 0 #00000105;
+}
+.sliderbimg {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  min-height: 200px;
+}
+.sliderbt {
+  color: #545454;
+  font-weight: 500;
+  padding: 0 15px;
+}
+.sliderb p {
+  color: #545454;
+  padding: 15px;
+  margin-bottom: 0;
+  min-height: 94px;
+}
+.sliderbz {
+  color: #C4C4C4;
+  float: right;
+  padding: 0 16px;
+  min-height: 27px;
+}
+.sliderbc {
+  font-size: 18px;
+  color: #000000;
+  float: right;
+  padding: 0 16px;
+}
+.clear {
+  clear: both;
+}
+.sliderbbut {
+  font-size: 16px;
+  padding: 4px 40px;
+  color: #ffffff;
+  margin: 10px auto;
+  background: #49ADF2;
+  border-radius: 15px;
+  text-align: center;
+  width: 30%;
+}
+.sliderbbutc {
+  font-size: 16px;
+  padding: 4px 40px;
+  color: #ffffff;
+  border-radius: 15px;
+  margin: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+.sliderbbut, .showall, .labbbut {
+  text-decoration: none;
+}
+.sliderbbut:hover, .showall:hover, .labbbut:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+.screen5{padding: 25px 50px; }
+.abcenter {    display: flex;
+    min-height: 440px;}
+.adcenterc {    margin: auto}
+.screen5t { color:#1F86DB; font-weight: 700; text-transform: uppercase; font-size:26px; padding-bottom: 10px;}
+.hron { overflow: hidden; width: 80%;}
+.hron img{ width: 100%;}
+.telsc5 {padding: 10px 0;}
+.telsc5 {color:#545454; font-weight: 700; font-size: 20px; }
+.scr5in {border-radius: 20px; border:1px solid #C4C4C4; padding: 6px 12px; font-size: 13px; min-width: 220px; }
+.scr5but { padding: 6px 20px;
+	border-radius: 20px;
+    color: #ffffff;
+    margin: 0 0px 0 -30px;
+    background: #82ac0a;
+    width: 180px;
+    text-align: center; border:none;}
+footer { display: block; height: 159px;
+background: #415766;}
 @media only screen and (min-width : 1297px) {
   .dropdown:hover .dropdown-menu {
     display: block;
