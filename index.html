@@ -15,12 +15,12 @@
 <body>
 <div class="container top">
   <div class="row">
-	  <div class="col-lg-3"><a href="index.html"><img src="ico/logo.png" class="logo" alt=""></a></div>
+    <div class="col-lg-3"><a href="index.html"><img src="ico/logo.png" class="logo" alt=""></a></div>
     <div class="col-lg-7 offset-lg-2">
       <div class="contith">
         <div class="tel"> Тел: +7 (843) 229-13-81 <br>
           Email: info@lab-21.ru </div>
-        <div class="butq">Задать вопрос</div>
+        <div class="butq" data-bs-toggle="modal" data-bs-target="#quest">Задать вопрос</div>
         <div class="hnavi"><span class="hhome">Казань <img src="ico/strl.png" alt="" width="10px;"></span> Ru <img src="ico/strl.png" alt="" width="10px;"></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button>
       </div>
@@ -31,11 +31,11 @@
   <div class="container">
     <div class="mintop">
       <div class="row">
-		  <div class="col-sm-4"> <a href="index.html"><img src="ico/logo.svg" class="logo" alt=""></a></div>
+        <div class="col-sm-4"> <a href="index.html"><img src="ico/logo.svg" class="logo" alt=""></a></div>
         <div class="col-sm-8">
           <div class="topcont">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button>
-            <div class="butq">Задать вопрос</div>
+            <div class="butq" data-bs-toggle="modal" data-bs-target="#quest">Задать вопрос</div>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item home"> <a class="nav-link" href="index.html"><span class="lin">Главная</span></a> </li>
-        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Каталог </a>
+        <!--  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Каталог </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -52,12 +52,13 @@
             </li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Отрасли</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">О компании</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Услуги</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Наши проекты</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Контакты</a> </li>
+        </li>-->
+        <li class="nav-item"> <a class="nav-link" href="cat.html">Каталог</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="otrasli.html">Отрасли</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="about.html">О компании</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="uslugi.html">Услуги</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="projects.html">Наши проекты</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="cont.html">Контакты</a> </li>
       </ul>
       <form class="d-flex">
         <input class="form-control" type="search" placeholder="Поиск по сайту" aria-label="Search">
@@ -97,7 +98,7 @@
         <p>Мы поставляем широкий ассортимент лабораторного оборудования, приборов, реактивов и лабораторной посуды, что позволяет осуществлять полную комплектацию лабораторий предприятий и учреждений современным лабораторным оборудованием, а также расходными материалами и лабораторной мебелью.</p>
         <p> Основная задача нашей фирмы – это комплексное решение проблем заказчика, наиболее полное удовлетворение разнообразных запросов пользователей аналитических приборов и расходных материалов </p>
       </div>
-      <div class="centermin"><a href="#" class="labbbut">Подробнее</a> </div>
+      <div class="centermin"><a href="about.html" class="labbbut">Подробнее</a> </div>
     </div>
   </div>
   <div class="labfig">
@@ -146,7 +147,7 @@
       </div>
     </div>
   </div>
-  <div class="showallcont"> <a href="#" class="showall">Показать все</a> </div>
+  <div class="showallcont"> <a href="otrasli.html" class="showall">Показать все</a> </div>
 </div>
 <div class="screen4">
   <div class="container">
@@ -162,7 +163,7 @@
                 <p>Предназначен для анализа неорганических и органических ионов...</p>
                 <div class="cartbz">Цена по запросу</div>
                 <div class="clear"></div>
-                <div class="sliderbbutc"><a href="#" class="sliderbbut">Запросить</a></div>
+                <div class="sliderbbutc"><a href="#" class="sliderbbut" data-bs-toggle="modal" data-bs-target="#zapros">Запросить</a></div>
               </div>
             </div>
             <div class="slider__item">
@@ -172,7 +173,7 @@
                 <p>Электронные настольные весы CAS AD-10H повышенной точности, НПВ 10кг.</p>
                 <div class="sliderbc">7 590 ₽</div>
                 <div class="clear"></div>
-                <div class="sliderbbutc"><a href="#" class="sliderbbut">Запросить</a></div>
+                <div class="sliderbbutc"><a href="#" class="sliderbbut" data-bs-toggle="modal" data-bs-target="#zapros">Запросить</a></div>
               </div>
             </div>
             <div class="slider__item">
@@ -182,7 +183,7 @@
                 <p>Предназначен для производства дистиллированной воды, отвечающей требованиям...</p>
                 <div class="sliderbc">19 850 ₽</div>
                 <div class="clear"></div>
-                <div class="sliderbbutc"><a href="#" class="sliderbbut">Запросить</a></div>
+                <div class="sliderbbutc"><a href="#" class="sliderbbut" data-bs-toggle="modal" data-bs-target="#zapros">Запросить</a></div>
               </div>
             </div>
             <div class="slider__item">
@@ -192,7 +193,7 @@
                 <p>Предназначен для анализа неорганических и органических ионов...</p>
                 <div class="sliderbc">15 850 ₽</div>
                 <div class="clear"></div>
-                <div class="sliderbbutc"><a href="#" class="sliderbbut">Запросить</a></div>
+                <div class="sliderbbutc"><a href="#" class="sliderbbut" data-bs-toggle="modal" data-bs-target="#zapros">Запросить</a></div>
               </div>
             </div>
             <div class="slider__item">
@@ -202,7 +203,7 @@
                 <p>Предназначен для производства дистиллированной воды, отвечающей требованиям...</p>
                 <div class="sliderbc">19 850 ₽</div>
                 <div class="clear"></div>
-                <div class="sliderbbutc"><a href="#" class="sliderbbut">Запросить</a></div>
+                <div class="sliderbbutc"><a href="#" class="sliderbbut" data-bs-toggle="modal" data-bs-target="#zapros">Запросить</a></div>
               </div>
             </div>
           </div>
@@ -215,11 +216,11 @@
           <li data-slide-to="2"></li>
           <li data-slide-to="3"></li>
           <li data-slide-to="4"></li>
-		</ol>
+        </ol>
       </div>
     </div>
   </div>
-  <div class="showallcont"> <a href="#" class="showall">Перейти в каталог</a> </div>
+  <div class="showallcont"> <a href="cat.html" class="showall">Перейти в каталог</a> </div>
 </div>
 <div class="screen5">
   <div class="screen5cont">
@@ -249,7 +250,58 @@
   </div>
 </div>
 <footer></footer>
+<div class="modal fade" id="quest" tabindex="-1" aria-labelledby="questLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modcont">
+      <div class="modal-content">
+        <div class="showallcont">
+          <h5 class="modtit" id="questLabel">Задать вопрос</h5>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <input type="text" placeholder="Ваше имя*" class="modinp">
+          <input type="tel" placeholder="Телефон*" class="modinp">
+          <input type="email" placeholder="Email*" class="modinp">
+          <textarea placeholder="Введите ваш вопрос" class="modarea"></textarea>
+          <div class="showallcont">
+            <button class="butq2">Отправить запрос</button>
+          </div>
+          <div class="sogl">Заполняя данную форму, Вы даете свое согласие на обработку персональных данных</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="zapros" tabindex="-1" aria-labelledby="zaprosLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modcont">
+      <div class="modal-content">
+        <div class="showallcont">
+          <h5 class="modtit" id="zaprosLabel">Задать вопрос</h5>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <input type="text" placeholder="Ваше имя*" class="modinp">
+              <input type="text" placeholder="Телефон*" class="modinp">
+              <input type="text" placeholder="Название организации" class="modinp">
+            </div>
+            <div class="col-lg-6">
+              <textarea placeholder="Ваш вопрос или комментарий к заказу" class="modarea"></textarea>
+            </div>
+          </div>
+          <div class="showallcont">
+            <button class="butq2">Отправить</button>
+          </div>
+          <div class="sogl">Заполняя данную форму, Вы даете свое согласие на обработку персональных данных</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <script>
+	
 	document.addEventListener('DOMContentLoaded', function() {
   new ChiefSlider('.slider');
 });</script>

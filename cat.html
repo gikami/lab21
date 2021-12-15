@@ -20,7 +20,7 @@
       <div class="contith">
         <div class="tel"> Тел: +7 (843) 229-13-81 <br>
           Email: info@lab-21.ru </div>
-        <div class="butq">Задать вопрос</div>
+        <div class="butq" data-bs-toggle="modal" data-bs-target="#quest">Задать вопрос</div>
         <div class="hnavi"><span class="hhome">Казань <img src="ico/strl.png" alt="" width="10px;"></span> Ru <img src="ico/strl.png" alt="" width="10px;"></div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button>
       </div>
@@ -35,7 +35,7 @@
         <div class="col-sm-8">
           <div class="topcont">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </button>
-            <div class="butq">Задать вопрос</div>
+            <div class="butq" data-bs-toggle="modal" data-bs-target="#quest">Задать вопрос</div>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item home"> <a class="nav-link" href="index.html"><span class="lin">Главная</span></a> </li>
-        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Каталог </a>
+        <!--  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Каталог </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -52,12 +52,13 @@
             </li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Отрасли</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">О компании</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Услуги</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Наши проекты</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Контакты</a> </li>
+        </li>-->
+        <li class="nav-item"> <a class="nav-link" href="cat.html">Каталог</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="otrasli.html">Отрасли</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="about.html">О компании</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="uslugi.html">Услуги</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="projects.html">Наши проекты</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="cont.html">Контакты</a> </li>
       </ul>
       <form class="d-flex">
         <input class="form-control" type="search" placeholder="Поиск по сайту" aria-label="Search">
@@ -74,7 +75,7 @@
   <div class="title">Контакты</div>
   <div class="row">
     <div class="col-md-3">
-      <div class="filcont">
+      <div class="filcont" id="filcont">
         <div class="filconti">
           <div class="filtit">Категория</div>
           <div class="filnavi"><img src="ico/str.svg" alt=""><a href="#"> Аналитическое оборудование</a></div>
@@ -120,16 +121,17 @@
             <input type="checkbox" name="type">
             THERMO</div>
         </div>
-      </div>
+        <span class="filba"><a href="#">Очистить фильтр</a> </span> <span class="filb"><a href="#" class="butq2">Применить</a></span> </div>
     </div>
     <div class="col-md-9">
-      <div class="filtit">Хрономатграфы</div>
-      <div class="strcont"> Сортировать: По возрастанию цены <img src="ico/strl.png" alt="" width="14px;"> <span class="float-end">Скачать каталог <img src="ico/down.svg" alt="" width="14px;"></span></div>
+      <div class="filtit">Хроматографы</div>
+      <div class="strcont"> Сортировать: По возрастанию цены <img src="ico/strl.svg" alt="" width="14px;"> <span class="float-end"><span class="downcat">Скачать каталог <img src="ico/down.svg" alt="" width="14px;"></span><span class="filt"><img src="ico/fil.svg" alt="" width="18px;" id="hider"></span></span></div>
       <div class="row">
         <div class="col-md-6 col-lg-4">
-          <div class="cartcat">
+          <div class="cartcat"> <a href="tovar.html">
             <div class="catimg"><img src="ico/image5.png" alt=""></div>
             <div class="cartbt">Ионный хроматограф "Стайер-портативный"</div>
+            </a>
             <p>Предназначен для анализа неорганических и органических ионов...</p>
             <div class="sliderbz">Цена по запросу</div>
             <div class="clear"></div>
@@ -177,20 +179,11 @@
           </div>
         </div>
       </div>
-      <div class="showallcont"> 
-		  <span class="gnavi"><</span> 
-		  <span class="gnavi">1</span> 
-		  <span class="gnavi">2</span> 
-		  <span class="gnavi">3</span> 
-		  <span class="gnavi">...</span>
-		  <span class="gnavi">8</span> 
-		  <span class="gnavi">></span> 
-		</div>
+      <div class="showallcont"> <span class="gnavi"><</span> <span class="gnavi">1</span> <span class="gnavi">2</span> <span class="gnavi">3</span> <span class="gnavi">...</span> <span class="gnavi">8</span> <span class="gnavi">></span> </div>
     </div>
   </div>
 </div>
-	
-	<div class="screen5">
+<div class="screen5">
   <div class="screen5cont">
     <div class="container">
       <div class = "row">
@@ -219,8 +212,19 @@
 </div>
 <footer></footer>
 <script>
-	document.addEventListener('DOMContentLoaded', function() {
-  new ChiefSlider('.slider');
-});</script>
+	
+	//фильтр
+	document.getElementById('hider').addEventListener("click", hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.getElementById('filcont');
+      if (x.style.display == "none"){
+	  x.style.display = "block";
+	  } else {
+	 x.style.display = "none"}
+    };
+	//фильтр
+	
+	
+	</script>
 </body>
 </html>
