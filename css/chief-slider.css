@@ -79,12 +79,14 @@
 }
 
 .slider__control[data-slide='prev']::before {
-content: '<';
+content: '';
+	background-image: url("../ico/tudi.svg");
 	text-decoration: none; font-size: 35px; font-weight: bold;
 }
 
 .slider__control[data-slide='next']::before {
-content: '>';
+content: '';
+	background-image: url("../ico/sudi.svg");
 	text-decoration: none; font-size: 35px; font-weight: bold;
 }
 
